@@ -1,0 +1,66 @@
+@import './../../assets/style/scss/base';
+.App-header {
+  flex: none;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: @headerHeight;
+  background: #394959;
+  padding: 0 20px;
+  .A-h-left {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    .App-logo {
+      position: relative;
+      line-height: @headerHeight;
+      font-size: 32px;
+      font-weight: normal;
+      color: #fff;
+      display: inline-block;
+      &:after {
+        position: absolute;
+        top: 50%;
+        margin-top: -13px;
+        right: -15px;
+        width: 1px;
+        height: 26px;
+        background: #50667d;
+        content: '';
+      }
+    }
+    .menu-btn {
+      margin-left: 30px;
+      line-height: 42px;
+      .icon {
+        font-size: 16px;
+        color: #fff;
+        line-height: @headerHeight;
+      }
+      .title {
+        line-height: @headerHeight;
+        margin-left: 13px;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+  .A-h-infos {
+    display: flex;
+    display: -webkit-box;
+    .form-item {
+      display: flex;
+      display: -webkit-box;
+      margin-right: 15px;
+      label {
+        color: #fff;
+        font-size: 14px;
+      }
+      .form-ipt {
+        display: inline-block;
+      }
+    }
+  }
+}

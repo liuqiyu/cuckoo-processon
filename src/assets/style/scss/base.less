@@ -1,0 +1,53 @@
+@headerHeight: 44px;
+@boxShadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+
+.flex-column {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+.flex0 {
+  flex: none;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+/** 单行隐藏 **/
+.ellipsis1 {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.common-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  overflow-y: auto;
+  .common-body {
+    padding: 12px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: @boxShadow;
+    border-radius: 4px;
+  }
+}
+
+.find-wrapper {
+  height: 40px;
+  width: 100%;
+  border-bottom: solid 1px #dadcde;
+}
+
+.table-wrapper {
+  width: 100%;
+  margin-top: 10px;
+}
